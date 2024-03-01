@@ -1,0 +1,336 @@
+/* vars */
+:root {
+  --theme: #7b68ee;
+  --theme2: #f4f4f3;
+  --theme3: #aca0f3;
+  --white: #fdfeff;
+  --text: #515151;
+  --gray: #717171;
+  --swiper-theme-color: var(--white) !important;
+}
+
+/* fonts */
+@font-face {
+  font-family: IRANYekan;
+  src: url("./../font/IRANYekan/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Regular.woff")
+    format("woff");
+}
+
+* {
+  transition: all 0.3s;
+  font-family: IRANYekan, serif;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  background-color: var(--theme2) !important;
+  overflow-x: hidden;
+  max-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 6px;
+  background-color: var(--white);
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 6px;
+  background-color: var(--theme);
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+p {
+  line-height: 30px !important;
+  text-align: justify;
+}
+
+/* font sizes */
+
+.font-10 {
+  font-size: 10px !important;
+}
+
+.font-12 {
+  font-size: 12px !important;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.spc-line {
+  width: 1px;
+  height: 40px;
+  background-color: #a0a0a0;
+}
+
+.spc-sm-line {
+  width: 1px;
+  height: 20px;
+  background-color: #a0a0a0;
+  margin: auto 5px;
+}
+
+/* navbar */
+.navbar,
+.offcanvas {
+  z-index: 999;
+  background-color: var(--theme3, #fdfeff) !important;
+}
+
+.navbar {
+  max-height: 100;
+}
+
+button {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.nav-link:hover {
+  color: var(--theme) !important;
+}
+
+.list-group-item {
+  border: 0 !important;
+}
+
+.logo {
+  /* min-width: 10%; */
+  width: 40px;
+}
+
+/* search box */
+.search-box {
+  width: 400px;
+  height: 40px;
+  background-color: #ebebeb;
+  border-radius: 5px;
+}
+
+.search-box {
+  background-color: #ebebeb;
+}
+
+.search-box input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+}
+
+.search-box input:focus {
+  outline: none !important;
+}
+
+/*  */
+.sm-search-box {
+  background-color: #ebebeb;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input-box {
+  width: 100%;
+}
+
+.sm-search-box input {
+  background-color: transparent;
+  width: 100%;
+}
+
+.sm-search-box input::placeholder {
+  font-size: 12px;
+}
+
+/* small device nav */
+.nav-box {
+  width: 90%;
+  background-color: var(--theme3);
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* button */
+.btn-theme {
+  background-color: var(--theme) !important;
+  color: var(--white) !important;
+}
+
+.login-btn {
+  height: 45px;
+  position: relative;
+}
+
+/* sign up form */
+.signUp-form {
+  position: absolute;
+  width: 380px;
+  left: 10px;
+  top: 60px;
+  z-index: 999;
+  background-color: var(--white);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+/* sign up form modal */
+.signUp-form-modal {
+  position: absolute;
+  width: 95%;
+  left: 10px;
+  top: 60px;
+  z-index: 999;
+  background-color: var(--white);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.form-header {
+  border: 2px solid #cccccc;
+  /* padding: 10px; */
+}
+
+.login-inputs {
+  height: 38px;
+  padding: 6px 12px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+.label span {
+  color: red;
+  cursor: wait;
+}
+
+.label .text-hover:hover {
+  color: var(--theme);
+}
+
+/* side bar list */
+
+.list-icon {
+  font-size: 25px !important;
+}
+
+/* article */
+article {
+  position: absolute;
+  top: 15px;
+}
+
+.filter-box {
+  background-color: var(--white);
+  /* width: 25vw; */
+  height: 100vh;
+  padding: 20px;
+}
+
+.spacer {
+  width: 100%;
+  height: 1px;
+  background-color: #ededed;
+}
+
+.items a {
+  color: var(--text);
+}
+
+.webtil {
+  color: var(--theme3) !important;
+}
+
+.margin-page {
+  margin-top: 60px;
+}
+
+.time {
+  font-size: 12px;
+}
+
+/* posts */
+.card-img {
+  height: 100% !important;
+}
+
+.footer {
+  width: 100%;
+  height: 56px;
+  background-color: var(--theme3);
+}
+
+.small-nav {
+  background-color: var(--theme3);
+}
+
+/* category sm device */
+.category-list {
+  color: var(--theme);
+  width: 100%;
+  margin: 50px auto 0 !important;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  border-radius: 20px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: var(--white);
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown-list {
+    background-color: var(--white);
+  }
+  .sm-navbar {
+    height: 50px;
+  }
+  .card {
+    height: 136px !important;
+  }
+  .card-img {
+    max-height: 120px;
+  }
+
+  .card-info {
+    font-size: 12px;
+  }
+
+  .time {
+    font-size: 10px;
+  }
+}
